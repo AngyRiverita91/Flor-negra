@@ -1,0 +1,145 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Flor Negra - Magia Urbana</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Special Elite', cursive;
+      background: linear-gradient(to bottom, #000000, #0a0f0a);
+      color: #c0ffb3;
+      overflow-x: hidden;
+    }
+
+    header {
+      background-color: rgba(0, 0, 0, 0.95);
+      padding: 2rem;
+      text-align: center;
+      border-bottom: 2px solid #1e3d1e;
+      box-shadow: 0 0 30px #00ff7f33;
+      position: relative;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin: 0;
+      color: #aaffcc;
+      text-shadow: 0 0 8px #00ff7f;
+    }
+
+    .grasa {
+      width: 100%;
+      height: 30px;
+      background: repeating-linear-gradient(
+        45deg,
+        #1e1e1e,
+        #1e1e1e 10px,
+        #333 10px,
+        #333 20px
+      );
+      box-shadow: inset 0 0 10px #00ff7f88;
+    }
+
+    section {
+      padding: 2rem;
+      max-width: 800px;
+      margin: auto;
+      line-height: 1.7;
+      text-align: center;
+    }
+
+    .flor-magica {
+      display: block;
+      margin: 2rem auto;
+      width: 100px;
+      filter: drop-shadow(0 0 10px #00ff7f);
+      animation: flotar 4s ease-in-out infinite;
+    }
+
+    @keyframes flotar {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+
+    .btn-wsp {
+      display: inline-block;
+      margin-top: 2rem;
+      padding: 1rem 2rem;
+      background-color: #25d366;
+      color: black;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #25d366aa;
+      transition: transform 0.2s ease;
+    }
+
+    .btn-wsp:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 15px #25d366;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #0b0b0b;
+      font-size: 0.8rem;
+      border-top: 1px solid #1e3d1e;
+      color: #888;
+    }
+
+    .miel-escurrida {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100px;
+      background: radial-gradient(circle, #ffcc00 20%, #a87d00 80%);
+      clip-path: path("M0,0 Q50,100 100,0 T200,0 T300,0 T400,0 T500,0 T600,0 T700,0 T800,0 T900,0 T1000,0 V100 H0 Z");
+      animation: escurrir 5s ease-in-out infinite;
+      opacity: 0.08;
+      z-index: 1;
+    }
+
+    @keyframes escurrir {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(10px); }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="miel-escurrida"></div>
+    <h1>Flor Negra</h1>
+    <p>Florería secreta callejera — para brujas, poetas y rebeldes</p>
+  </header>
+
+  <div class="grasa"></div>
+
+  <section>
+    <img src="https://cdn-icons-png.flaticon.com/512/6075/6075433.png" alt="Flor mágica" class="flor-magica" />
+
+    <p>Bienvenid@ a <strong>Flor Negra</strong>, donde la magia florece entre el concreto y el caos.  
+    Aquí no vendemos ramos: entregamos símbolos.</p>
+
+    <p>Pregunta por la flor que cura sueños rotos o por el brebaje que florece en la oscuridad.  
+    Si ves miel en la banqueta… estás cerca.</p>
+
+    <a href="https://wa.me/5215555555555?text=Hola%20Flor%20Negra%2C%20quiero%20encargar%20un%20ramo%20de%20poder%20urbano" class="btn-wsp" target="_blank">
+      🌿 Pedir por WhatsApp
+    </a>
+  </section>
+
+  <footer>
+    © 2025 Flor Negra — Vive entre sombras y brotes.
+  </footer>
+
+</body>
+</html>
